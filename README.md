@@ -2,12 +2,10 @@
 
 <!-- Animated SVG Header -->
 <div align="center">
-  <img src="assets/name-animation.svg" alt="Sanny Un Sowadh Wamik" width="600"/>
+  <img src="assets/name-animation.svg" alt="Sanny Un Sowadh" width="600"/>
 </div>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Data+Scientist+%7C+ML+%26+AI+Enthusiast;Building+Future+with+Data;Let%27s+Code+and+Create!&center=true&width=500&height=50&color=00ff99)](https://git.io/typing-svg)
-
----
 
 <div align="center">
   <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="300" alt="Neon code animation"/>
