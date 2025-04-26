@@ -33,7 +33,7 @@
     font-weight="800"
     fill="url(#rainbow)"
     filter="url(#neonGlow)">
-    Sanny Un Sowadh
+    Sanny Un Sowadh Wamik
     <!-- subtle opacity pulse -->
     <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
     <!-- gentle scale “breathing” -->
