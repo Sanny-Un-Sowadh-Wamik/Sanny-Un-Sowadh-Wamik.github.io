@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanny Un Sowadh Wamik | Data Science Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Animated Background Elements -->
+  <div class="animated-background">
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+  </div>
+  <div class="grid-pattern"></div>
+  <div id="particles-js"></div>
+
+  <!-- Command Palette (hidden by default) -->
+  <div id="cmd-palette" class="cmd-palette">
+    <div class="cmd-palette-header">
+      <i class="fas fa-search text-gray-400"></i>
+      <input type="text" class="cmd-palette-input" placeholder="Search sections...">
+      <div class="text-gray-400 text-xs"> &nbsp;ESC to &nbsp;close</div>
+    </div>
+
+  </div>
+
+  <!-- Header/Navigation -->
+  <header class="sticky top-0 z-10 header-blur">
+    <div class="container mx-auto py-4 px-6 md:px-12 flex justify-between items-center">
+      <a href="#" class="flex items-center group">
+        <div class="w-10 h-10 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center mr-3 transition-all group-hover:scale-110">
+          <i class="fas fa-chart-line text-purple-600 dark:text-purple-400"></i>
+        </div>
+        <span class="font-bold text-lg text-gray-800 dark:text-white">sanny.dev</span>
+      </a>
+      
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="aboutme.html" class="nav-link">About Me</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="contact.html" class="nav-link flex items-center">
+          Contact <i class="fas fa-envelope text-xs ml-1"></i>
+        </a>
+        <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors focus:outline-none">
+          <i class="fas fa-sun text-yellow-500 dark:hidden"></i>
+          <i class="fas fa-moon text-blue-300 hidden dark:block"></i>
+        </button>
+        <button id="cmd-toggle" class="px-3 py-1.5 border border-gray-300 dark:border-gray-700 rounded-lg text-sm flex items-center transition-colors hover:bg-gray-200 dark:hover:bg-gray-800">
+          <span class="mr-1">⌘</span>K
+        </button>
+      </nav>
+      
+      <button class="md:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation (hidden by default) -->
+  <div id="mobile-nav" class="hidden fixed inset-0 bg-white dark:bg-gray-900 bg-opacity-95 dark:bg-opacity-95 z-20">
+    <div class="flex flex-col items-center justify-center h-full space-y-8">
+      <a href="#" class="text-2xl font-medium text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Home</a>
+      <a href="projects.html" class="text-2xl font-medium text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Projects</a>
+      <a href="skills.html" class="text-2xl font-medium text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Skills</a>
+      <a href="education.html" class="text-2xl font-medium text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Education</a>
+      <a href="contact.html" class="text-2xl font-medium text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Contact</a>
+      <button id="mobile-theme-toggle" class="mt-4 p-3 rounded-full bg-gray-100 dark:bg-gray-800 transition-colors">
+        <i class="fas fa-sun text-yellow-500 dark:hidden"></i>
+        <i class="fas fa-moon text-blue-300 hidden dark:block"></i>
+      </button>
+      <button id="close-mobile-nav" class="mt-8 p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
+
+  <main class="container mx-auto py-12 px-6 md:px-12 space-y-26">
+<!-- Education Section -->
+<section id="education" class="scroll-mt-20 section-animate">
+    <h2 class="section-title text-2xl font-bold">Education</h2>
+    <h3 class="text-2xl text-gray-500 dark:text-gray-400 mb-8">I learned a lot, but the real learning happens in the code editor!</h3>
+    
+    <p class="text-lg mb-8 text-gray-700 dark:text-gray-300">
+      Education has always been the cornerstone of my journey into the tech world. Pursuing a Bachelor of Data Science at RMIT University has provided me with a solid foundation in data science principles and programming skills.
+    </p>
+    
+    <p class="text-lg mb-10 text-gray-700 dark:text-gray-300">
+      My academic journey is complemented by hands-on projects and coursework, enabling me to build practical skills and a deep understanding of modern technological solutions in the data science field.
+    </p>
+    
+    <div class="space-y-12">
+      <!-- Education Item 1 -->
+      <div class="timeline-item">
+        <div class="flex items-center mb-2">
+          <i class="fas fa-graduation-cap text-purple-500 mr-2"></i>
+          <h3 class="text-xl font-semibold text-gray-200 dark:text-white">Bachelor of Data Science • Royal Melbourne Institute of Technology</h3>
+        </div>
+        <div class="text-gray-500 dark:text-gray-400 mb-2">Expected graduation: June 2027 • Melbourne, Australia</div>
+        <p class="text-gray-700 dark:text-gray-300">
+          Currently pursuing a degree in Data Science with a focus on machine learning, statistical analysis, and data visualization. Key coursework includes:
+        </p>
+        <ul class="list-disc pl-8 mt-2 space-y-1 text-gray-700 dark:text-gray-300">
+          <li>Practical Data Science</li>
+          <li>Advanced Programming for Data Science</li>
+          <li>Data Visualisation with R</li>
+          <li>Foundations of Artificial Intelligence</li>
+          <li>Practical Statistics</li>
+          <li>Object-Oriented Programming</li>
+          <li>Designing</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Education Code Block -->
+    <div class="code-block mt-12" data-filename="educationJourney.ts">
+      <pre class="mono text-sm overflow-x-auto">
+<span class="keyword">const</span> <span class="variable">educationJourney</span> = {
+<span class="variable">degree</span>: <span class="string">"Bachelor of Data Science"</span>,
+<span class="variable">courses</span>: [
+  <span class="string">"Advanced Caffeine Dependency"</span>,
+  <span class="string">"Procrastination 101"</span>,
+  <span class="string">"Debugging: The Final Frontier"</span>,
+]
+};
+
+<span class="variable">console</span>.<span class="function">log</span>(<span class="string">`My Education: ${</span><span class="variable">educationJourney</span>.<span class="variable">degree</span><span class="string">}`</span>);
+<span class="variable">educationJourney</span>.<span class="variable">courses</span>.<span class="function">forEach</span>(<span class="variable">course</span> <span class="keyword">=></span> <span class="variable">console</span>.<span class="function">log</span>(<span class="string">`- ${</span><span class="variable">course</span><span class="string">}`</span>));</pre>
+    </div>
+  </section>
+
+
+    <!-- Activities Section -->
+    <section id="activities" class="scroll-mt-20 section-animate p-6">
+        <h2 class="section-title text-2xl font-bold">Activities & Leadership</h2>
+        <h3 class="text-2xl text-gray-500 dark:text-gray-400 mb-8">Engaging with the community beyond the code</h3>
+        
+        <div class="space-y-12">
+          <!-- Activity Item 1 -->
+          <div class="timeline-item">
+            <div class="flex items-center mb-2">
+              <i class="fas fa-users text-purple-500 mr-2"></i>
+              <h3 class="text-xl font-semibold text-gray-450 dark:text-white">RMIT CSIT Society • CSIT Insider</h3>
+            </div>
+            <div class="text-gray-500 dark:text-gray-400 mb-2">August 2024 - Present • Melbourne, Australia</div>
+            <p class="text-gray-700 dark:text-gray-300">
+              Active member of the Computer Science and Information Technology Society at RMIT University, participating in tech events, workshops, and community building activities. Contributing to knowledge sharing and networking opportunities among peers in the tech field.
+            </p>
+          </div>
+          
+          <!-- Activity Item 2 -->
+          <div class="timeline-item">
+            <div class="flex items-center mb-2">
+              <i class="fas fa-globe text-purple-500 mr-2"></i>
+              <h3 class="text-xl font-semibold text-gray-450 dark:text-white">Notre Dame International Understanding and Relation Club • Organizer</h3>
+            </div>
+            <div class="text-gray-500 dark:text-gray-400 mb-2">2021 - 2023 • Dhaka, Bangladesh</div>
+            <p class="text-gray-700 dark:text-gray-300">
+              Organized cultural exchange activities and events to promote cross-cultural understanding and relationships among students from diverse backgrounds. Facilitated discussions, workshops, and international awareness programs.
+            </p>
+          </div>
+        </div>
+      </section>
+</main>
+  <!-- Footer -->
+  <footer class="bg-gray-900 dark:bg-gray-950 py-10 mt-32">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <p class="text-gray-400">© 2023 - 2025 • Built with Next.js, shadcn/ui and Tailwind CSS</p>
+          <p class="text-gray-500 text-sm">Coded with ❤️ and deployed with Vercel</p>
+        </div>
+        <div class="flex space-x-4">
+          <a href="mailto:sannyunsowadh01@gmail.com" class="text-gray-400 hover:text-white transition-colors">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://github.com/sanny-un-sowadh-wamik" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/sanny-un-sowadh-wamik" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="text-center mt-6 text-gray-500 text-sm">
+        Developed by <a href="#" class="text-purple-400 hover:text-purple-300 transition-colors">Sanny Un Sowadh Wamik</a> • Source code available on <a href="https://github.com/sanny-un-sowadh-wamik/portfolio" target="_blank" class="text-purple-400 hover:text-purple-300 transition-colors">GitHub</a>
+      </div>
+    </div>
+  </footer>
+<script src=brain.js></script>
+</body>
+</html>

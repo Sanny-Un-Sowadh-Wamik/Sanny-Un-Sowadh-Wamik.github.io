@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanny Un Sowadh Wamik | Data Science Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Animated Background Elements -->
+  <div class="animated-background">
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+  </div>
+  <div class="grid-pattern"></div>
+  <div id="particles-js"></div>
+
+  <!-- Command Palette (hidden by default) -->
+  <div id="cmd-palette" class="cmd-palette">
+    <div class="cmd-palette-header">
+      <i class="fas fa-search text-gray-400"></i>
+      <input type="text" class="cmd-palette-input" placeholder="Search sections...">
+      <div class="text-gray-400 text-xs"> &nbsp;ESC to &nbsp;close</div>
+    </div>
+
+  </div>
+
+  <!-- Header/Navigation -->
+  <header class="sticky top-0 z-10 header-blur">
+    <div class="container mx-auto py-4 px-6 md:px-12 flex justify-between items-center">
+      <a href="#" class="flex items-center group">
+        <div class="w-10 h-10 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center mr-3 transition-all group-hover:scale-110">
+          <i class="fas fa-chart-line text-purple-600 dark:text-purple-400"></i>
+        </div>
+        <span class="font-bold text-lg text-gray-800 dark:text-white">sanny.dev</span>
+      </a>
+      
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="aboutme.html" class="nav-link">About Me</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="contact.html" class="nav-link flex items-center">
+          Contact <i class="fas fa-envelope text-xs ml-1"></i>
+        </a>
+        <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors focus:outline-none">
+          <i class="fas fa-sun text-yellow-500 dark:hidden"></i>
+          <i class="fas fa-moon text-blue-300 hidden dark:block"></i>
+        </button>
+        <button id="cmd-toggle" class="px-3 py-1.5 border border-gray-300 dark:border-gray-700 rounded-lg text-sm flex items-center transition-colors hover:bg-gray-200 dark:hover:bg-gray-800">
+          <span class="mr-1">⌘</span>K
+        </button>
+      </nav>
+      
+      <button class="md:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation (hidden by default) -->
+  <div id="mobile-nav" class="hidden fixed inset-0 bg-white dark:bg-gray-900 bg-opacity-95 dark:bg-opacity-95 z-20">
+    <div class="flex flex-col items-center justify-center h-full space-y-8">
+      <a href="#" class="text-2xl font-medium text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Home</a>
+      <a href="projects.html" class="text-2xl font-medium text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Projects</a>
+      <a href="skills.html" class="text-2xl font-medium text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Skills</a>
+      <a href="education.html" class="text-2xl font-medium text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Education</a>
+      <a href="contact.html" class="text-2xl font-medium text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Contact</a>
+      <button id="mobile-theme-toggle" class="mt-4 p-3 rounded-full bg-gray-100 dark:bg-gray-800 transition-colors">
+        <i class="fas fa-sun text-yellow-500 dark:hidden"></i>
+        <i class="fas fa-moon text-blue-300 hidden dark:block"></i>
+      </button>
+      <button id="close-mobile-nav" class="mt-8 p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
+
+  <main class="container mx-auto py-12 px-6 md:px-12 space-y-26">
+    <!-- Projects Section -->
+    <section id="projects" class="scroll-mt-20 section-animate">
+        <h2 class="section-title text-2xl font-bold">Projects</h2>
+        <h3 class="text-2xl text-gray-500 dark:text-gray-400 mb-8">Building solutions one dataset at a time</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Project 1 -->
+          <div class="card">
+            <div class="h-48 bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-800 dark:to-blue-900 flex items-center justify-center relative overflow-hidden">
+              <div class="absolute inset-0 bg-grid opacity-10"></div>
+              <i class="fas fa-music text-5xl text-white"></i>
+            </div>
+            <div class="p-6 bg-white dark:bg-gray-900">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Music Bot</h3>
+                <div class="bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 text-xs px-2 py-1 rounded-full font-medium">
+                  Team Lead
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-gray-400 mb-4">
+                Discord music streaming bot built with Wavelink API and Lavalink integration. Features high-quality audio playback, playlist management, and intuitive commands for seamless server entertainment.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">Python</span>
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">Wavelink API</span>
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">Lavalink</span>
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">Discord.py</span>
+              </div>
+              <div class="flex space-x-4">
+                <a href="https://github.com/Sanny-Un-Sowadh-Wamik/MusicBot" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center transition-colors">
+                  <i class="fas fa-code-branch mr-1"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="card">
+            <div class="h-48 bg-gradient-to-r from-green-600 to-teal-600 dark:from-green-800 dark:to-teal-900 flex items-center justify-center relative overflow-hidden">
+              <div class="absolute inset-0 bg-grid opacity-10"></div>
+              <i class="fas fa-brain text-5xl text-white"></i>
+            </div>
+            <div class="p-6 bg-white dark:bg-gray-900">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Depression Prediction</h3>
+                <div class="bg-green-100 dark:bg-green-900/40 text-green-600 dark:text-green-400 text-xs px-2 py-1 rounded-full font-medium">
+                  Kaggle Competition
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-gray-400 mb-4">
+                Competed in 2024 Kaggle Playground Series – Season 4, Episode 11 "Exploring Mental Health Data", achieving a 0.94125 ROC-AUC score on the test set using advanced machine learning techniques.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">Python</span>
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">Pandas/NumPy</span>
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">Scikit-learn</span>
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">LightGBM</span>
+              </div>
+              <div class="flex space-x-4">
+                <a href="https://github.com/Sanny-Un-Sowadh-Wamik/Depression-Prediction-Project" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center transition-colors">
+                  <i class="fas fa-code-branch mr-1"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 3 -->
+          <div class="card">
+            <div class="h-48 bg-gradient-to-r from-red-600 to-orange-600 dark:from-red-800 dark:to-orange-900 flex items-center justify-center relative overflow-hidden">
+              <div class="absolute inset-0 bg-grid opacity-10"></div>
+              <i class="fas fa-database text-5xl text-white"></i>
+            </div>
+            <div class="p-6 bg-white dark:bg-gray-900">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Data Preprocessing Pipeline</h3>
+                <div class="bg-red-100 dark:bg-red-900/40 text-red-600 dark:text-red-400 text-xs px-2 py-1 rounded-full font-medium">
+                  RMIT Project
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-gray-400 mb-4">
+                Developed a comprehensive data pipeline for e-commerce clothing reviews, implementing XML parsing, data cleansing, and multi-source integration using Python. Engineered solutions for schema conflicts and data quality issues.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">Python</span>
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">Pandas</span>
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">ElementTree</span>
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">Data Wrangling</span>
+              </div>
+              <div class="flex space-x-4">
+                <a href="https://github.com/Sanny-Un-Sowadh-Wamik/Data-Preprocessing-Pipeline" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center transition-colors">
+                  <i class="fas fa-code-branch mr-1"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 4 -->
+          <div class="card">
+            <div class="h-48 bg-gradient-to-r from-yellow-600 to-amber-600 dark:from-yellow-800 dark:to-amber-900 flex items-center justify-center relative overflow-hidden">
+              <div class="absolute inset-0 bg-grid opacity-10"></div>
+              <i class="fas fa-ship text-5xl text-white"></i>
+            </div>
+            <div class="p-6 bg-white dark:bg-gray-900">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Titanic - ML from Disaster</h3>
+                <div class="bg-yellow-100 dark:bg-yellow-900/40 text-yellow-600 dark:text-yellow-400 text-xs px-2 py-1 rounded-full font-medium">
+                  Kaggle Competition
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-gray-400 mb-4">
+                Developed an end-to-end machine learning pipeline to predict passenger survival on the Titanic, performing data exploration, cleaning, feature engineering, and model tuning to achieve 76.794% accuracy.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">Python</span>
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">Random Forest</span>
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">Logistic Regression</span>
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">Cross-validation</span>
+              </div>
+              <div class="flex space-x-4">
+                <a href="https://github.com/Sanny-Un-Sowadh-Wamik/Titanic---Machine-Learning-from-Disaster" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center transition-colors">
+                  <i class="fas fa-code-branch mr-1"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 5 -->
+          <div class="card md:col-span-2">
+            <div class="h-48 bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-800 dark:to-indigo-900 flex items-center justify-center relative overflow-hidden">
+              <div class="absolute inset-0 bg-grid opacity-10"></div>
+              <i class="fas fa-home text-5xl text-white"></i>
+            </div>
+            <div class="p-6 bg-white dark:bg-gray-900">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">House Prices Prediction</h3>
+                <div class="bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 text-xs px-2 py-1 rounded-full font-medium">
+                  Kaggle Competition
+                </div>
+              </div>
+              <p class="text-gray-600 dark:text-gray-400 mb-4">
+                Developed an end-to-end regression pipeline for the "House Prices: Advanced Regression Techniques" Kaggle competition, using the Ames dataset with 79 features. Implemented extensive data preprocessing and feature engineering, then trained and fine-tuned multiple models including Lasso, Ridge, ElasticNet, Random Forest, Gradient Boosting, XGBoost, and LightGBM. Achieved a public leaderboard RMSE of 0.12099 through ensemble techniques.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">Python</span>
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">Ensemble Learning</span>
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">XGBoost</span>
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">LightGBM</span>
+                <span class="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">Feature Engineering</span>
+              </div>
+              <div class="flex space-x-4">
+                <a href="https://github.com/Sanny-Un-Sowadh-Wamik/House-Prices-Prediction" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 flex items-center transition-colors">
+                  <i class="fas fa-code-branch mr-1"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</main>
+  <!-- Footer -->
+  <footer class="bg-gray-900 dark:bg-gray-950 py-10 mt-32">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <p class="text-gray-400">© 2023 - 2025 • Built with Next.js, shadcn/ui and Tailwind CSS</p>
+          <p class="text-gray-500 text-sm">Coded with ❤️ and deployed with Vercel</p>
+        </div>
+        <div class="flex space-x-4">
+          <a href="mailto:sannyunsowadh01@gmail.com" class="text-gray-400 hover:text-white transition-colors">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://github.com/sanny-un-sowadh-wamik" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/sanny-un-sowadh-wamik" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="text-center mt-6 text-gray-500 text-sm">
+        Developed by <a href="#" class="text-purple-400 hover:text-purple-300 transition-colors">Sanny Un Sowadh Wamik</a> • Source code available on <a href="https://github.com/sanny-un-sowadh-wamik/portfolio" target="_blank" class="text-purple-400 hover:text-purple-300 transition-colors">GitHub</a>
+      </div>
+    </div>
+  </footer>
+<script src=brain.js></script>
+</body>
+</html>
