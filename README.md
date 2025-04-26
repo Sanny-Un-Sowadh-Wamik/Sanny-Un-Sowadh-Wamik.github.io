@@ -1,8 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="140" viewBox="0 0 600 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#0d0d0d"/>
+      <stop offset="100%" stop-color="#1a1a1a"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="text-mask">
+      <text x="50%" y="85" font-family="Poppins, sans-serif" font-size="64" font-weight="800" text-anchor="middle">
+        Sanny Un Sowadh
+      </text>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="140" fill="url(#bgGrad)"/>
+  
+  <!-- Particle Animation -->
+  <g filter="url(#glow)">
+    <circle cx="100" cy="30" r="3" fill="#00e5ff">
+      <animate attributeName="cx" from="0" to="600" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="cy" from="140" to="0" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="100" r="2" fill="#ff00e5">
+      <animate attributeName="cx" from="600" to="0" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="cy" from="0" to="140" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <!-- add more particles as desired -->
+  </g>
+  
+  <!-- Scrolling Gradient -->
+  <rect width="600" height="140" clip-path="url(#text-mask)" fill="url(#bgGrad)">
+    <animate attributeName="x" from="-600" to="600" dur="5s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Text -->
+  <text x="50%" y="85" font-family="Poppins, sans-serif" font-size="64" font-weight="800" text-anchor="middle" fill="url(#bgGrad)" filter="url(#glow)">
+    Sanny Un Sowadh
+  </text>
+</svg>
+
+
 <!-- README.md -->
 
 <!-- Animated SVG Header -->
 <div align="center">
-  <img src="assets/name-animation.svg" alt="Sanny Un Sowadh" width="600"/>
+  <img src="assets/name-animation.svg" alt="Sanny Un Sowadh Wamik" width="600"/>
 </div>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Data+Scientist+%7C+ML+%26+AI+Enthusiast;Building+Future+with+Data;Let%27s+Code+and+Create!&center=true&width=500&height=50&color=00ff99)](https://git.io/typing-svg)
