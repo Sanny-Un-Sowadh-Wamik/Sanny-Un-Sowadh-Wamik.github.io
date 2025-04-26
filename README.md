@@ -5,29 +5,32 @@
 
 <svg width="800" height="150" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- animated rainbow gradient -->
-    <linearGradient id="G1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00ffbd"/>
-      <stop offset="50%" stop-color="#6928ff"/>
-      <stop offset="100%" stop-color="#ff0080"/>
-      <animate attributeName="x1" from="0%" to="100%" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="x2" from="100%" to="0%" dur="6s" repeatCount="indefinite"/>
-    </linearGradient>
-    <!-- neon glow -->
-    <filter id="F1"><feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#00ffbd" flood-opacity="0.6"/></filter>
+    <!-- falling characters pattern -->
+    <pattern id="p" patternUnits="userSpaceOnUse" width="20" height="20">
+      <text x="0" y="15" font-family="monospace" font-size="16" fill="#0f0">01</text>
+    </pattern>
+    <!-- mask to confine rain to text shape -->
+    <mask id="m">
+      <rect width="800" height="150" fill="black"/>
+      <text x="50%" y="90" text-anchor="middle" font-family="monospace" font-size="64" font-weight="bold" fill="white">
+        Sanny Un Sowadh Wamik
+      </text>
+    </mask>
   </defs>
-  <!-- bg -->
-  <rect width="800" height="150" fill="#111"/>
-  <!-- text -->
-  <text x="50%" y="90" text-anchor="middle" font-family="Poppins,sans-serif" font-size="64" font-weight="800"
-        fill="url(#G1)" filter="url(#F1)">
-    Sanny Un Sowadh Wamik
-    <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
-    <animateTransform attributeName="transform" type="scale" values="1;1.02;1" keyTimes="0;0.5;1" dur="5s" additive="sum" repeatCount="indefinite"/>
+  <!-- background -->
+  <rect width="800" height="150" fill="#000"/>
+  <!-- rain -->
+  <rect width="800" height="150" fill="url(#p)">
+    <animateTransform attributeName="transform" type="translate" from="0 -150" to="0 150" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <!-- text overlay to sharpen edges -->
+  <text x="50%" y="90" text-anchor="middle" font-family="monospace" font-size="64" font-weight="bold"
+        fill="#0f0" mask="url(#m)">
   </text>
 </svg>
 
 </div>
+
 
 
 
