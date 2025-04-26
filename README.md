@@ -1,8 +1,3 @@
-<!-- 🎊 Confetti Celebration -->
-<div align="center">
-  <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="confetti" width="800"/>
-</div>
-
 <!-- 👋 Big Neon Name + Mascot -->
 <div align="center">
   <h1 style="font-family: Poppins, sans-serif; color: #00ff99; text-shadow: 0 0 10px #00ff99;">
