@@ -60,9 +60,6 @@
   <a href="https://github.com/Sanny-Un-Sowadh-Wamik/House-Prices" target="_blank" style="margin: 10px;">
     <img src="https://img.shields.io/badge/🏡 House+Prices-7B1FA2?style=for-the-badge&logo=homeassistant&logoColor=white" alt="House Prices"/>
   </a>
-  <a href="https://github.com/Sanny-Un-Sowadh-Wamik/Data-Pipeline" target="_blank" style="margin: 10px;">
-    <img src="https://img.shields.io/badge/🛒 E-commerce+Pipeline-009688?style=for-the-badge&logo=python&logoColor=white" alt="E-commerce Pipeline"/>
-  </a>
 </div>
 
 ---
