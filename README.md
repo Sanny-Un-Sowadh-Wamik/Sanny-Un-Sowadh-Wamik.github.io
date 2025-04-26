@@ -6,23 +6,6 @@
   <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" alt="cat sticker" width="120"/>
 </div>
 
-<!-- 🚀 Sticker-Bomb Marquee of Skills -->
-<marquee behavior="scroll" direction="left" scrollamount="6" style="margin: 1em 0;">
-  <img src="https://media.giphy.com/media/3o6ZtpxSZbQRRnwCKQ/giphy.gif" alt="rocket" height="50"/>
-  &nbsp;
-  <img src="https://media.giphy.com/media/Ov5NPR8URV1Dg/giphy.gif" alt="laptop" height="50"/>
-  &nbsp;
-  <img src="https://media.giphy.com/media/Mb3YMPx66BLTy/giphy.gif" alt="brain" height="50"/>
-  &nbsp;&nbsp;
-  <!-- tech badges -->
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" height="28"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" alt="R" height="28"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL" height="28"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/ML–AI-FCBA03?style=for-the-badge&logo=tensorflow&logoColor=white" alt="ML/AI" height="28"/>
-</marquee>
 
 ---
 
