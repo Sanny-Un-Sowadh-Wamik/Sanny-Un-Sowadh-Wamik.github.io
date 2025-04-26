@@ -2,7 +2,44 @@
 
 <!-- Animated SVG Header -->
 <div align="center">
-  <img src="assets/name-animation.svg" alt="Sanny Un Sowadh" width="600"/>
+
+<!-- Inline “normal” animated gradient text -->
+<svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00c6ff"/>
+      <stop offset="50%" stop-color="#0072ff"/>
+      <stop offset="100%" stop-color="#00c6ff"/>
+      <!-- animate the gradient’s position -->
+      <animate  
+        xlink:href="#grad"  
+        attributeName="x1"  
+        from="0%" to="100%"  
+        begin="0s" dur="4s"  
+        repeatCount="indefinite" />
+      <animate  
+        xlink:href="#grad"  
+        attributeName="x2"  
+        from="100%" to="0%"  
+        begin="0s" dur="4s"  
+        repeatCount="indefinite" />
+    </defs>
+
+  <!-- dark background rectangle -->
+  <rect width="600" height="120" fill="#111"/>
+
+  <!-- your name, filled with that moving gradient -->
+  <text 
+    x="50%" y="70" 
+    font-family="Poppins,sans-serif" 
+    font-size="60" 
+    font-weight="700" 
+    text-anchor="middle" 
+    fill="url(#grad)">
+    Sanny Un Sowadh
+  </text>
+</svg>
+
 </div>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Data+Scientist+%7C+ML+%26+AI+Enthusiast;Building+Future+with+Data;Let%27s+Code+and+Create!&center=true&width=500&height=50&color=00ff99)](https://git.io/typing-svg)
@@ -10,6 +47,7 @@
 <div align="center">
   <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="300" alt="Neon code animation"/>
 </div>
+
 
 ---
 
