@@ -3,57 +3,32 @@
 <!-- Animated SVG Header -->
 <div align="center">
 
-<!-- 🌈 Gradient + glow + pulse SVG header -->
 <svg width="800" height="150" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Animated rainbow gradient -->
-    <linearGradient id="rainbow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#00ffbd"/>
-      <stop offset="50%"  stop-color="#6928ff"/>
+    <!-- animated rainbow gradient -->
+    <linearGradient id="G1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ffbd"/>
+      <stop offset="50%" stop-color="#6928ff"/>
       <stop offset="100%" stop-color="#ff0080"/>
-      <!-- move the gradient left→right -->
       <animate attributeName="x1" from="0%" to="100%" dur="6s" repeatCount="indefinite"/>
       <animate attributeName="x2" from="100%" to="0%" dur="6s" repeatCount="indefinite"/>
     </linearGradient>
-    <!-- Soft neon glow -->
-    <filter id="neonGlow">
-      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#00ffbd" flood-opacity="0.7"/>
-    </filter>
+    <!-- neon glow -->
+    <filter id="F1"><feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#00ffbd" flood-opacity="0.6"/></filter>
   </defs>
-
-  <!-- Dark background -->
+  <!-- bg -->
   <rect width="800" height="150" fill="#111"/>
-
-  <!-- Your name with gradient fill, glow, and pulse -->
-  <text
-    x="50%" y="90"
-    text-anchor="middle"
-    font-family="Poppins,sans-serif"
-    font-size="64"
-    font-weight="800"
-    fill="url(#rainbow)"
-    filter="url(#neonGlow)">
+  <!-- text -->
+  <text x="50%" y="90" text-anchor="middle" font-family="Poppins,sans-serif" font-size="64" font-weight="800"
+        fill="url(#G1)" filter="url(#F1)">
     Sanny Un Sowadh Wamik
-    <!-- subtle opacity pulse -->
     <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
-    <!-- gentle scale “breathing” -->
-    <animateTransform attributeName="transform"
-                      type="scale"
-                      values="1;1.02;1"
-                      keyTimes="0;0.5;1"
-                      dur="5s"
-                      additive="sum"
-                      repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="scale" values="1;1.02;1" keyTimes="0;0.5;1" dur="5s" additive="sum" repeatCount="indefinite"/>
   </text>
 </svg>
 
 </div>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Data+Scientist+%7C+ML+%26+AI+Enthusiast;Building+Future+with+Data;Let%27s+Code+and+Create!&center=true&width=500&height=50&color=00ff99)](https://git.io/typing-svg)
-
-<div align="center">
-  <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="300" alt="Neon code animation"/>
-</div>
 
 
 ---
