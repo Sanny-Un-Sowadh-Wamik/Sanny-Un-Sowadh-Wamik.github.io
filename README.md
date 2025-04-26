@@ -1,4 +1,25 @@
 <!-- README.md -->
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00c6ff"/>
+      <stop offset="50%" stop-color="#0072ff"/>
+      <stop offset="100%" stop-color="#00c6ff"/>
+    </linearGradient>
+    <clipPath id="text-mask">
+      <text x="50%" y="70" font-family="Montserrat, sans-serif" font-size="60" font-weight="700" text-anchor="middle">
+        Sanny Un Sowadh
+      </text>
+    </clipPath>
+  </defs>
+  <rect width="600" height="120" fill="url(#grad)">
+    <animate attributeName="x" from="-600" to="600" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <text x="50%" y="70" font-family="Montserrat, sans-serif" font-size="60" font-weight="700" text-anchor="middle" fill="#fff">
+    Sanny Un Sowadh
+  </text>
+</svg>
 
 <!-- Animated SVG Header -->
 <div align="center">
