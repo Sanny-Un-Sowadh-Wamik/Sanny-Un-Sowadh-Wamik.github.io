@@ -1,38 +1,99 @@
-<!-- 🎉 Greeting Marquee -->
-<marquee behavior="alternate" scrollamount="8" style="font-size:1.2em; color:#00ff99; margin-bottom:1em;">
-  👋 Hello there! I’m Sanny Un Sowadh—Data Scientist | ML & AI Enthusiast
-</marquee>
+<!-- 🎊 Confetti Celebration -->
+<div align="center">
+  <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="confetti" width="800"/>
+</div>
 
-<!-- 📇 Profile Card -->
-<table align="center" cellpadding="10">
-  <tr>
-    <td align="center">
-      <!-- glowing, animated GIF avatar -->
-      <img
-        src="https://media.giphy.com/media/L05HgB2h6qICDs5Sms/giphy.gif"
-        alt="Sanny Un Sowadh"
-        width="140"
-        style="border-radius:50%; box-shadow:0 0 15px #00ff99;"
-      />
-    </td>
-    <td valign="middle" style="text-align:left; line-height:1.4;">
-      <h1 style="margin:0; color:#00ff99;">Sanny Un Sowadh</h1>
-      <p style="margin:0.2em 0; font-size:1em; color:#aaa;">
-        🎓 Data Science @ RMIT • 🛠️ ML & Data Pipelines • 🎯 Kaggle Competitor
-      </p>
-      <p style="margin:0.2em 0;">
-        <a href="mailto:sannyunsowadh01@gmail.com"><img src="https://img.shields.io/badge/📧-Email-ff69b4?style=flat&logo=gmail" alt="Email"/></a>
-        <a href="https://linkedin.com/in/sanny-un-sowadh-wamik"><img src="https://img.shields.io/badge/🔗-LinkedIn-0077B5?style=flat&logo=linkedin" alt="LinkedIn"/></a>
-        <a href="https://github.com/Sanny-Un-Sowadh-Wamik"><img src="https://img.shields.io/badge/🐱-GitHub-181717?style=flat&logo=github" alt="GitHub"/></a>
-      </p>
-      <p style="margin:0.2em 0;">
-        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python" alt="Python"/>
-        <img src="https://img.shields.io/badge/ML–AI-FCBA03?style=for-the-badge&logo=tensorflow" alt="ML/AI"/>
-      </p>
-    </td>
-  </tr>
-</table>
+<!-- 👋 Big Neon Name + Mascot -->
+<div align="center">
+  <h1 style="font-family: Poppins, sans-serif; color: #00ff99; text-shadow: 0 0 10px #00ff99;">
+    👋 Hi, I’m Sanny Un Sowadh!
+  </h1>
+  <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" alt="cat sticker" width="120"/>
+</div>
+
+<!-- 🚀 Sticker-Bomb Marquee of Skills -->
+<marquee behavior="scroll" direction="left" scrollamount="6" style="margin: 1em 0;">
+  <img src="https://media.giphy.com/media/3o6ZtpxSZbQRRnwCKQ/giphy.gif" alt="rocket" height="50"/>
+  &nbsp;
+  <img src="https://media.giphy.com/media/Ov5NPR8URV1Dg/giphy.gif" alt="laptop" height="50"/>
+  &nbsp;
+  <img src="https://media.giphy.com/media/Mb3YMPx66BLTy/giphy.gif" alt="brain" height="50"/>
+  &nbsp;&nbsp;
+  <!-- tech badges -->
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" height="28"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" alt="R" height="28"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL" height="28"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/ML–AI-FCBA03?style=for-the-badge&logo=tensorflow&logoColor=white" alt="ML/AI" height="28"/>
+</marquee>
 
 ---
 
-<!-- 👇 keep the rest of your README below -->
+## 🚀 About Me
+
+🎓 Data Science Student @ **RMIT University, Melbourne**  
+🛠️ Crafting: ML Models · Data Pipelines · Predictive Analytics  
+🎯 Kaggle Competitor · Discord MusicBot Lead · Cybersecurity Explorer  
+📫 Reach me: [sannyunsowadh01@gmail.com](mailto:sannyunsowadh01@gmail.com)
+
+---
+
+## 🛠️ Tech Stack
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&animation=spin) 
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white&animation=spin) 
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white&animation=spin) 
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white&animation=spin)  
+
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white&animation=spin) 
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white&animation=spin) 
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white&animation=spin)  
+
+![Scikit-Learn](https://img.shields.io/badge/Scikit%20Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white&animation=spin) 
+![LightGBM](https://img.shields.io/badge/LightGBM-8BC34A?style=for-the-badge&logo=lightgbm&logoColor=white&animation=spin)
+
+---
+
+## 🏆 GitHub Stats
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Sanny-Un-Sowadh-Wamik&show_icons=true&theme=radical&count_private=true&ring=FFFFFF" height="180px"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sanny-Un-Sowadh-Wamik&layout=compact&theme=radical&hide_border=true" height="180px"/>
+  <br/>
+  <img src="https://streak-stats.demolab.com?user=Sanny-Un-Sowadh-Wamik&theme=radical&fire=00ff99" alt="GitHub Streak"/>
+</div>
+
+---
+
+## 📚 Projects Showcase
+
+<div align="center">
+  <a href="https://github.com/Sanny-Un-Sowadh-Wamik/MusicBot" target="_blank" style="margin: 10px;">
+    <img src="https://img.shields.io/badge/🎵 MusicBot-1DB954?style=for-the-badge&logo=discord&logoColor=white" alt="MusicBot"/>
+  </a>
+  <a href="https://www.kaggle.com/competitions/kaggle-playground-series-season-4/leaderboard" target="_blank" style="margin: 10px;">
+    <img src="https://img.shields.io/badge/🧠 Depression+Prediction-F7931E?style=for-the-badge&logo=kaggle&logoColor=white" alt="Depression Prediction"/>
+  </a>
+  <a href="https://github.com/Sanny-Un-Sowadh-Wamik/Titanic-ML" target="_blank" style="margin: 10px;">
+    <img src="https://img.shields.io/badge/🚢 Titanic+Predictor-0052CC?style=for-the-badge&logo=apache&logoColor=white" alt="Titanic Predictor"/>
+  </a>
+  <a href="https://github.com/Sanny-Un-Sowadh-Wamik/House-Prices" target="_blank" style="margin: 10px;">
+    <img src="https://img.shields.io/badge/🏡 House+Prices-7B1FA2?style=for-the-badge&logo=homeassistant&logoColor=white" alt="House Prices"/>
+  </a>
+  <a href="https://github.com/Sanny-Un-Sowadh-Wamik/Data-Pipeline" target="_blank" style="margin: 10px;">
+    <img src="https://img.shields.io/badge/🛒 E-commerce+Pipeline-009688?style=for-the-badge&logo=python&logoColor=white" alt="E-commerce Pipeline"/>
+  </a>
+</div>
+
+---
+
+## 📫 Connect With Me
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sanny-un-sowadh-wamik)  
+[![GitHub](https://img.shields.io/badge/-GitHub-black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Sanny-Un-Sowadh-Wamik)  
+
+---
+
+🌟 _Let’s make data dance!_ 🌟  
