@@ -75,15 +75,3 @@
 </div>
 
 ---
-
-## 🛣️ Roadmap
-
-```mermaid
-timeline
-    title Career & Learning Roadmap
-    2025-05 : Complete Bachelor of Data Science (RMIT)
-    2025-06 : Publish Depression Prediction paper
-    2025-09 : Build End-to-End MLOps Pipeline
-    2025-12 : Contribute to Open-Source ML Library
-    2026-03 : Internship @ Leading AI Company
-    2026-06 : Master’s Application in AI/ML
