@@ -3,40 +3,47 @@
 <!-- Animated SVG Header -->
 <div align="center">
 
-<!-- Inline “normal” animated gradient text -->
-<svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+<!-- 🌈 Gradient + glow + pulse SVG header -->
+<svg width="800" height="150" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00c6ff"/>
-      <stop offset="50%" stop-color="#0072ff"/>
-      <stop offset="100%" stop-color="#00c6ff"/>
-      <!-- animate the gradient’s position -->
-      <animate  
-        xlink:href="#grad"  
-        attributeName="x1"  
-        from="0%" to="100%"  
-        begin="0s" dur="4s"  
-        repeatCount="indefinite" />
-      <animate  
-        xlink:href="#grad"  
-        attributeName="x2"  
-        from="100%" to="0%"  
-        begin="0s" dur="4s"  
-        repeatCount="indefinite" />
-    </defs>
+    <!-- Animated rainbow gradient -->
+    <linearGradient id="rainbow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#00ffbd"/>
+      <stop offset="50%"  stop-color="#6928ff"/>
+      <stop offset="100%" stop-color="#ff0080"/>
+      <!-- move the gradient left→right -->
+      <animate attributeName="x1" from="0%" to="100%" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" from="100%" to="0%" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <!-- Soft neon glow -->
+    <filter id="neonGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#00ffbd" flood-opacity="0.7"/>
+    </filter>
+  </defs>
 
-  <!-- dark background rectangle -->
-  <rect width="600" height="120" fill="#111"/>
+  <!-- Dark background -->
+  <rect width="800" height="150" fill="#111"/>
 
-  <!-- your name, filled with that moving gradient -->
-  <text 
-    x="50%" y="70" 
-    font-family="Poppins,sans-serif" 
-    font-size="60" 
-    font-weight="700" 
-    text-anchor="middle" 
-    fill="url(#grad)">
+  <!-- Your name with gradient fill, glow, and pulse -->
+  <text
+    x="50%" y="90"
+    text-anchor="middle"
+    font-family="Poppins,sans-serif"
+    font-size="64"
+    font-weight="800"
+    fill="url(#rainbow)"
+    filter="url(#neonGlow)">
     Sanny Un Sowadh
+    <!-- subtle opacity pulse -->
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
+    <!-- gentle scale “breathing” -->
+    <animateTransform attributeName="transform"
+                      type="scale"
+                      values="1;1.02;1"
+                      keyTimes="0;0.5;1"
+                      dur="5s"
+                      additive="sum"
+                      repeatCount="indefinite"/>
   </text>
 </svg>
 
