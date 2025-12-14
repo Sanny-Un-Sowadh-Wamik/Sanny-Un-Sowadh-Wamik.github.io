@@ -52,8 +52,8 @@ npm run build
 ### Admin Access
 
 Navigate to `/admin` and use the following credentials:
-- Username: `admin`
-- Password: `sanny2024`
+- Username: `xxxx`
+- Password: `xxxx`
 
 ## Project Structure
 
