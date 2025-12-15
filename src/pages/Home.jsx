@@ -9,10 +9,10 @@ export default function Home() {
   const { profile, stats } = data;
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       {/* Hero Section */}
-      <section className="container mx-auto px-6 py-20 md:py-32">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section className="container mx-auto px-4 sm:px-6 py-12 md:py-32">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -35,7 +35,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="text-4xl md:text-6xl font-bold leading-tight"
+              className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight"
             >
               Hi, I'm{' '}
               <span className="text-gradient">{profile.name.split(' ')[0]}</span>
@@ -45,7 +45,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-xl text-primary-400 font-medium"
+              className="text-base sm:text-xl text-primary-400 font-medium"
             >
               {profile.tagline}
             </motion.p>
@@ -54,7 +54,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="text-dark-400 text-lg max-w-lg"
+              className="text-dark-400 text-sm sm:text-base md:text-lg max-w-lg"
             >
               {profile.bio}
             </motion.p>
@@ -112,9 +112,10 @@ export default function Home() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
+            className="hidden sm:block"
           >
             <CodeBlock filename="welcome.ts">
-              <pre className="text-sm md:text-base">
+              <pre className="text-xs sm:text-sm md:text-base whitespace-pre-wrap break-words">
                 <Comment>Welcome to my portfolio!</Comment>
                 {'\n\n'}
                 <Keyword>interface</Keyword> <Type>Developer</Type> {'{'}
@@ -137,18 +138,18 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 sm:px-6 py-10 md:py-16">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6"
+          className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6"
         >
           {[
-            { value: stats.projectsCompleted, label: 'Projects Completed', color: 'primary' },
-            { value: stats.skillsLearned, label: 'Skills Learned', color: 'blue' },
-            { value: stats.githubRepos, label: 'GitHub Repos', color: 'green' },
-            { value: `${stats.yearsLearning}+`, label: 'Years Learning', color: 'orange' },
+            { value: stats.projectsCompleted, label: 'Projects', color: 'primary' },
+            { value: stats.skillsLearned, label: 'Skills', color: 'blue' },
+            { value: stats.githubRepos, label: 'Repos', color: 'green' },
+            { value: `${stats.yearsLearning}+`, label: 'Years', color: 'orange' },
           ].map((stat, index) => (
             <motion.div
               key={index}
@@ -157,30 +158,30 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
-              className="card text-center py-8"
+              className="card text-center py-4 sm:py-8 px-2 sm:px-6"
             >
               <motion.p
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 + 0.2, type: 'spring' }}
-                className={`text-4xl font-bold text-${stat.color}-400`}
+                className={`text-2xl sm:text-4xl font-bold text-${stat.color}-400`}
               >
                 {stat.value}
               </motion.p>
-              <p className="text-dark-400 mt-2">{stat.label}</p>
+              <p className="text-dark-400 mt-1 sm:mt-2 text-xs sm:text-base">{stat.label}</p>
             </motion.div>
           ))}
         </motion.div>
       </section>
 
       {/* Quick Links Section */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 sm:px-6 py-10 md:py-16">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="grid md:grid-cols-3 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6"
         >
           {[
             { path: '/projects', title: 'View Projects', desc: 'Explore my data science and ML projects' },
