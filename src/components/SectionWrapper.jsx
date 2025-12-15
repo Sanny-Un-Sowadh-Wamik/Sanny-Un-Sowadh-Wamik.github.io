@@ -36,11 +36,11 @@ export default function SectionWrapper({
       whileInView="visible"
       viewport={{ once: true, margin: '-100px' }}
       variants={containerVariants}
-      className={`py-20 ${className}`}
+      className={`py-10 sm:py-16 md:py-20 overflow-x-hidden ${className}`}
     >
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         {showTitle && title && (
-          <motion.h2 variants={itemVariants} className="section-title">
+          <motion.h2 variants={itemVariants} className="section-title text-2xl sm:text-3xl">
             {title}
           </motion.h2>
         )}
