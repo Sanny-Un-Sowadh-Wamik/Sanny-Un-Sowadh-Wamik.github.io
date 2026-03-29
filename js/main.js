@@ -92,6 +92,9 @@ function initVideoSource() {
       video.load();
       video.play().catch(() => {/* Autoplay blocked — muted so should be fine */});
     }
+
+    // Slow the video down slightly for a more cinematic feel
+    video.playbackRate = 0.75;
   }
 
   applySource();
