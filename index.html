@@ -150,37 +150,44 @@
       <!-- Decorative kanji / English watermark (swaps with language) -->
       <div class="hero-kanji" id="heroKanji">データ科学</div>
 
-      <!-- Main hero content -->
-      <div class="hero-content">
-        <div class="section-label anim-item" data-jp="ポートフォリオ" data-en="PORTFOLIO">ポートフォリオ</div>
+      <!-- Main hero content: left + right panels, center empty -->
+      <div class="hero-sides">
 
-        <h1 class="hero-name anim-item">SANNY UN<br>SOWADH WAMIK</h1>
-
-        <p class="hero-subtitle anim-item"
-           data-jp="データサイエンティスト ・ 機械学習エンジニア"
-           data-en="DATA SCIENTIST · ML ENGINEER">
-          データサイエンティスト ・ 機械学習エンジニア
-        </p>
-
-        <div class="hero-divider anim-item"></div>
-
-        <!-- Technology stack tags -->
-        <div class="hero-tags anim-item">
-          <span class="hero-tag">Python</span>
-          <span class="hero-tag">Machine Learning</span>
-          <span class="hero-tag" data-jp="予測モデリング"  data-en="Predictive Modelling">予測モデリング</span>
-          <span class="hero-tag" data-jp="データ可視化"   data-en="Data Visualisation">データ可視化</span>
-          <span class="hero-tag">R</span>
-          <span class="hero-tag" data-jp="顧客分析"       data-en="Customer Analytics">顧客分析</span>
+        <!-- LEFT panel: identity -->
+        <div class="hero-panel hero-panel--left">
+          <div class="section-label anim-item" data-jp="ポートフォリオ" data-en="PORTFOLIO">ポートフォリオ</div>
+          <h1 class="hero-name anim-item">SANNY UN<br>SOWADH WAMIK</h1>
+          <p class="hero-subtitle anim-item"
+             data-jp="データサイエンティスト ・ 機械学習エンジニア"
+             data-en="DATA SCIENTIST · ML ENGINEER">
+            データサイエンティスト ・ 機械学習エンジニア
+          </p>
+          <div class="hero-divider anim-item"></div>
         </div>
 
-        <!-- Call-to-action → jumps to Contact slide -->
-        <button class="hero-cta anim-item"
-                onclick="goToSlide(5)"
-                data-jp="[ 連絡先 →  ]"
-                data-en="[ CONTACT → ]">
-          [ 連絡先 → ]
-        </button>
+        <!-- CENTER: intentionally empty -->
+        <div class="hero-center-void"></div>
+
+        <!-- RIGHT panel: tags + CTA -->
+        <div class="hero-panel hero-panel--right">
+          <!-- Technology stack tags -->
+          <div class="hero-tags anim-item">
+            <span class="hero-tag">Python</span>
+            <span class="hero-tag">Machine Learning</span>
+            <span class="hero-tag" data-jp="予測モデリング"  data-en="Predictive Modelling">予測モデリング</span>
+            <span class="hero-tag" data-jp="データ可視化"   data-en="Data Visualisation">データ可視化</span>
+            <span class="hero-tag">R</span>
+            <span class="hero-tag" data-jp="顧客分析"       data-en="Customer Analytics">顧客分析</span>
+          </div>
+          <!-- Call-to-action → jumps to Contact slide -->
+          <button class="hero-cta anim-item"
+                  onclick="goToSlide(5)"
+                  data-jp="[ 連絡先 →  ]"
+                  data-en="[ CONTACT → ]">
+            [ 連絡先 → ]
+          </button>
+        </div>
+
       </div>
     </section><!-- /SLIDE 0 -->
 
